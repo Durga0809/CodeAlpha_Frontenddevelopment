@@ -44,8 +44,6 @@ p{
     margin:5px;
     flex-grow: 1;
 }
-
-
 #lightbox{
     display: none;
     position:fixed;
@@ -91,7 +89,7 @@ h1{
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
              font-size: 50px;
              
-        }
+ }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -153,8 +151,8 @@ h1{
         </div>
     <script >
         let images=document.querySelectorAll(".img1");
-let index=0;
-function openLightbox(i){
+        let index=0;
+       function openLightbox(i){
        index=i;
        document.getElementById("lightbox").style.display="flex";
        document.getElementById("lightboximg").src=images[index].src;
@@ -179,8 +177,7 @@ document.querySelector(".close").onclick=function(){
     {
         alert("Last image reached");
     }
-}
-    
+}   
     function prev()
     {
         if(index>0)
@@ -193,9 +190,6 @@ document.querySelector(".close").onclick=function(){
         alert("First image reached");
     }
     }
-
-
-    </script>
-    
+    </script>    
 </body>
 </html>
